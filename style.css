@@ -1,0 +1,48 @@
+@define-color bg #181818;
+@define-color fg #e4e4e4;
+@define-color blu #92a7cb;
+
+* {
+  font-family: "Inter", "JetBrainsMono Nerd Font Propo";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+window#waybar {
+  background-color: alpha(@bg, 0.99);
+  border-radius: 99px;
+}
+
+.modules-center {
+  padding: 0px 8px 0px 8px;
+}
+
+#workspaces button {
+  all: unset;
+  padding: 0 8px;
+  margin: 4px 0px;
+  transition: 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  color: @fg;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  border-radius: 99px;
+  padding: 0 16px;
+  background: @blu;
+  color: @bg;
+}
+
+#custom-launcher {
+  font-size: 18px;
+}
+
+#clock,
+#battery,
+#network,
+#custom-launcher,
+#pulseaudio,
+#tray {
+  padding: 0 6px;
+  color: @fg;
+}
