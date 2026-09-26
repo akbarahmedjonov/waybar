@@ -1,11 +1,9 @@
-@define-color bg #121212;
-@define-color fg #ffffff;
-@define-color blu #327bd1;
+@import "colors.css";
 
 * {
-  font-family: "Inter", "JetBrainsMono Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font Propo";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 window#waybar {
