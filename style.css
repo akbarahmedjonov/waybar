@@ -1,0 +1,47 @@
+@define-color bg #121212;
+@define-color bg1 #383636;
+@define-color fg #ffffff;
+@define-color blu #327bd1;
+
+* {
+    font-family: "FiraCode Nerd Font Propo"; 
+    font-size: 16px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#workspaces button {
+    all:unset;
+    padding: 0 10px;
+    margin: 0 2px;
+    border-radius: 9px;
+    color: @fg;
+    background-color: @bg;
+    transition: 200ms ease-in-out;
+}
+
+#workspaces button.focused, #workspaces button.active {
+    padding: 0 20px;
+    background-color: @blu;
+    color: @bg;
+}
+
+window#waybar.empty #window{
+    background: transparent;
+}
+
+#clock,
+#battery,
+#window,
+#network,
+#pulseaudio,
+#tray {
+    padding: 0 12px;
+    border-radius: 9px;
+    background-color: @bg;
+    margin: 0 2px;
+    color: @fg;
+}
